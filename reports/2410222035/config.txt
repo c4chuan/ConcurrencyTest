@@ -1,0 +1,9 @@
+#服务器配置
+带宽:100Mbps
+#gunicorn配置
+进程(--worker):16
+线程(--thread):8
+gevent:true
+#数据库配置
+maxconnections=500,  # 最大连接数
+mincached=100,  # 初始化时创建的空闲连接数maxcached=250
